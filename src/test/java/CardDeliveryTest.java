@@ -21,7 +21,7 @@ public class CardDeliveryTest {
             SelenideElement form = $("#root");
             form.$("[data-test-id=city] input").setValue("Москва");
             form.$("[data-test-id='date'] input").doubleClick().sendKeys("30.09.2022");
-            form.$("[data-test-id=name] input").setValue("Быковская Маргарита");
+            form.$("[data-test-id=name] input").setValue("Иванов Иван");
             form.$("[data-test-id=phone] input").setValue("+79094653782");
             form.$("[data-test-id=agreement]").click();
             form.$$("button").find(exactText("Забронировать")).click();
